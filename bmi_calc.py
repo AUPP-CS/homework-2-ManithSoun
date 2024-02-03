@@ -8,4 +8,5 @@ Reminders:
 - add error checking for invalid input and unrealistic information
 '''
 def bmi_check(weight, height):
-    # Add your code here
+    
+
