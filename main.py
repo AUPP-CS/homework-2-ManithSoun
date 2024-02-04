@@ -5,8 +5,8 @@ from bmi_calc import bmi_check
 # Add your code here
 while True:
     name = input("What is your name? : ")
-    weight = input("How much do you weight? (in kg): ")
-    height = input("How tall are you? (in m): ")
+    weight = float(input("How much do you weight? (in kg): "))
+    height = float(input("How tall are you? (in m): "))
 
 
     print(f"Hello {name} You are {bmi_check(weight, height)} BMI")
