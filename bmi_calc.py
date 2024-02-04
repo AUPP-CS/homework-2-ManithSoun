@@ -14,7 +14,7 @@ def bmi_check(weight, height):
         weight = float(weight)
         height = float(height)
 
-        if (weight < 636) or (height < 2.27):
+        if (weight < 636) and (height < 2.27):
             bmi_score = round(weight / (height ** 2), 1)
 
             if bmi_score < 18.5:
@@ -32,9 +32,6 @@ def bmi_check(weight, height):
     except ValueError:
         return "invalid input"
 
-# Example usage:
-result = bmi_check("70", "1.75")
-print(result)
 
 
 
