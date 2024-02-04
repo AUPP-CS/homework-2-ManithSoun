@@ -19,11 +19,11 @@ def bmi_check(weight, height):
         bmi_calculate =  weight/(height**2)
         if bmi_calculate < 18.5:
             return "underweight by ", bmi_calculate 
-        elif 18.5 <= bmi_calculate <= 24.9:
+        elif bmi_calculate <= 24.9:
             return  "normal by ", bmi_calculate
-        elif 25 <= bmi_calculate <= 29.9:
+        elif bmi_calculate <= 29.9:
             return "overweight ", bmi_calculate
-        elif 30 <= bmi_calculate <= 39.9:
+        elif bmi_calculate <= 39.9:
             return "obese by ", bmi_calculate
         elif bmi_calculate <= 40:
             return  "extrmely obese by ", bmi_calculate
