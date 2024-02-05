@@ -10,7 +10,7 @@ Reminders:
 
 
 def bmi_check(weight, height):
- 
+
     if weight == float(weight) and height == float(height):
         if weight > 0 and height > 0:
                 if (weight < 636) and (height < 2.27):
@@ -18,11 +18,11 @@ def bmi_check(weight, height):
 
                     if bmi_score < 18.5:
                         return "underweight", bmi_score 
-                    elif 18.5 <= bmi_score < 25:
+                    elif 18.5 <= bmi_score <= 24.9:
                         return "normal", bmi_score
-                    elif 25 <= bmi_score < 30:
+                    elif 25 <= bmi_score <= 29.9:
                         return "overweight", bmi_score
-                    elif 30 <= bmi_score < 40:
+                    elif 30 <= bmi_score <= 40:
                         return "obese", bmi_score
                     else:
                         return "extremely obese", bmi_score
@@ -32,19 +32,4 @@ def bmi_check(weight, height):
             return "invalid input"
     else:
         return "invalid input"
-
-
-
-
-            # if bmi_score >= 40:
-            #     return 'extremely obese', bmi_score
-            # elif bmi_score >= 30:
-            #     return 'obese', bmi_score
-            # elif bmi_score >= 25:
-            #     return 'overweight', bmi_score
-            # elif bmi_score >= 18.5:
-            #     return 'normal', bmi_score
-            # else:
-            #     return 'underweight', bmi_score
-    
     
